@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import React, { useState } from "react";
-import Tesseract from "tesseract.js";
+import * as Tesseract from "tesseract.js";
 
 const ImageUpload = () => {
   const [image, setImage] = useState(null);
@@ -41,7 +41,7 @@ const ImageUpload = () => {
       {text && <textarea value={text} readOnly rows="10"></textarea>}
       {loading && <div className="loading-text">Processing image...</div>}
 
-      <footer class='footer'>
+      <footer className='footer'>
         <p> 
             Created by {""}
             <a 
@@ -53,8 +53,7 @@ const ImageUpload = () => {
                 <FaGithub className="github-icon" />Rami Mohamed 
             </a>        
         </p>  
-        </footer>
-
+      </footer>
     </div>
   );
 };
