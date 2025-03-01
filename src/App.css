@@ -130,9 +130,11 @@ textarea:focus {
 }
 
 .github-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;  /* Added this line */
+  text-align: center;
+  gap: 2px;
   color: white;
   text-decoration: none;
   font-weight: 600;
